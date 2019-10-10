@@ -1,8 +1,8 @@
-import application.result as Result
-import application.dependency_injection.command_factory as CommandFactory
-import application.dependency_injection.persistence_factory as PersistenceFactory
-import application.dependency_injection.repository_factory as RepositoryFactory
-import application.dependency_injection.resource_factory as ResourceFactory
+from ....application import result as Result
+from .. import command_factory as CommandFactory
+from .. import persistence_factory as PersistenceFactory
+from .. import repository_factory as RepositoryFactory
+from .. import resource_factory as ResourceFactory
 
 def get() -> Result:
     persitence = PersistenceFactory.get()
